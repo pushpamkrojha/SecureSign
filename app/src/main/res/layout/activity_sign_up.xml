@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/mainbackground">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:text="Welcome \nSign Up to Continue" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:layout_margin="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/background"
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:hint="Enter Your Name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_mail_24"
+        android:layout_margin="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/background"
+            android:layout_gravity="center"
+            app:hintTextColor="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/mail"
+            android:hint="Enter Your Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/background"
+            android:layout_gravity="center"
+            app:hintTextColor="@color/black"
+            android:id="@+id/uniqueId"
+            android:textColor="@color/black"
+            android:hint="Enter Unique Id" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/lock_24"
+        android:layout_margin="20dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:id="@+id/password"
+            android:hint="Enter Your Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#306A32"
+        android:text="Sign Up" />
+</LinearLayout>
